@@ -16,5 +16,7 @@ jobs:
 
     - name: Test
       uses: chipsu/hello-world-docker-action@master
+      env:
+        MY_SECRET: ${{ secrets.MY_SECRET }}
       with:
         who-to-greet: 'Mona the Octocat'
